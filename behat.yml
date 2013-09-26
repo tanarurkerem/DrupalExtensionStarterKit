@@ -1,0 +1,11 @@
+default:
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://dug.loc/
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      api_driver: drupal
+      drupal:
+        drupal_root: "../www"
