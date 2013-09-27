@@ -31,6 +31,14 @@ Print \*.feature example:
 
     bin/behat --story-syntax
 
+Run tests:
+
+    bin/behat
+
+Run one test(eg.: login.feature in your features directory):
+
+    bin/behat features/login.feature
+
 Use Selenium:
   Add @javascript tag to your Feature or Scenario
 
