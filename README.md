@@ -6,30 +6,30 @@ How to start
 
 Clone it:
 
-  git clone git@github.com:tanarurkerem/dug20130926.git
+    git clone git@github.com:tanarurkerem/dug20130926.git
 
 Initialize:
 
-  bash init.sh
+    bash init.sh
 
 If you would like to use Selenium test, start selenium:
 
-  bash selenium.sh start
+    bash selenium.sh start
 
 Use:
 
-  Use :)
+    Use :)
 
 Some tips:
 ----------
 
 Print all available step definitions:
 
-  bin/behat -dl
+    bin/behat -dl
 
 Print \*.feature example:
 
-  bin/behat --story-syntax
+    bin/behat --story-syntax
 
 Use Selenium:
   Add @javascript tag to your Feature or Scenario
