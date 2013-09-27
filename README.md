@@ -18,11 +18,11 @@ If you would like to use Selenium test, start selenium:
 
 Set your base\_url in behat.yml (eg.: mysite.loc)
 
-    sed -i -e 's/dug.loc/mysite.loc/g' behat.yml
+    sed -i .bak -e 's/dug.loc/mysite.loc/g' behat.yml
 
 Set your drupal\_root in behat.yml (eg.: ~/sites/mydrupal)
 
-    sed -i -e 's!../www!~/sites/mydrupal!g' behat.yml
+    sed -i .bak -e 's!../www!~/sites/mydrupal!g' behat.yml
 
 Use:
 
