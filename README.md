@@ -26,7 +26,7 @@ Set your drupal\_root in behat.yml (eg.: ~/sites/mydrupal)
 
 Use:
 
-    Use :)
+    bin/behat
 
 Some tips:
 ----------
@@ -43,9 +43,9 @@ Run tests:
 
     bin/behat
 
-Run one test(eg.: login.feature in your features directory):
+Run one test(eg.: testEnviromentWorks.feature in your features directory):
 
-    bin/behat features/login.feature
+    bin/behat features/testEnviromentWorks.feature
 
 Use Selenium:
   Add @javascript tag to your Feature or Scenario
