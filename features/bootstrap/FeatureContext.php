@@ -30,15 +30,13 @@ class FeatureContext extends Drupal\DrupalExtension\Context\DrupalContext
         // Initialize your context here
     }
 
-//
-// Place your definition and hook methods here:
-//
-//    /**
-//     * @Given /^I have done something with "([^"]*)"$/
-//     */
-//    public function iHaveDoneSomethingWith($argument)
-//    {
-//        doSomethingWith($argument);
-//    }
-//
+
+    /**
+     * @When /^I wait (\d+)$/
+     */
+    public function iWait($milliseconds)
+    {
+        $this->getSession()->wait($milliseconds);
+    }
+
 }
