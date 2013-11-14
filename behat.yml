@@ -3,7 +3,7 @@ default:
     Behat\MinkExtension\Extension:
       goutte: ~
       selenium2: ~
-      base_url: http://drupal.loc/
+      base_url: http://dh2013.loc/
     Drupal\DrupalExtension\Extension:
       blackbox: ~
       api_driver: drupal
