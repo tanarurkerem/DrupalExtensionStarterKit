@@ -19,7 +19,7 @@ elif [ x"$1" = xupdate ]; then
   curl -O http://code.google.com/p/selenium/downloads/list
   actualversion=$(grep -o "selenium-server-standalone-[0-9]*\\.[0-9]*\\.[0-9]*\\.jar" list|head -n 1)
   curl -O http://selenium.googlecode.com/files/$actualversion
-  mv selenium-server* selenium-server.jar
+  mv selenium-server-* selenium-server.jar
   rm list
   cd ../..
 else
