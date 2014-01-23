@@ -6,7 +6,7 @@ How to start
 
 Clone it:
 
-    git clone git@github.com:tanarurkerem/dug20130926.git
+    git clone git@github.com:tanarurkerem/DrupalExtensionStarterKit.git
 
 Initialize:
 
