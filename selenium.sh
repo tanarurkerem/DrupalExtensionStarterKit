@@ -14,6 +14,14 @@ elif [ x"$1" = xstop ]; then
   kill `cat "$PIDFILE"`
   rm $PIDFILE
   echo "Selenium stoped"
+elif [ x"$1" = xupdate ]; then
+  cd bin/selenium
+  curl -O http://code.google.com/p/selenium/downloads/list
+  actualversion=$(grep -o "selenium-server-standalone-[0-9]*\\.[0-9]*\\.[0-9]*\\.jar" list|head -n 1)
+  curl -O http://selenium.googlecode.com/files/$actualversion
+  mv selenium-server* selenium-server.jar
+  rm list
+  cd ../..
 else
   echo "Usage: selenium.sh start|stop"
   echo ""
