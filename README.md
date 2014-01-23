@@ -24,6 +24,10 @@ Use:
 
     bin/behat
 
+Update:
+
+    bash update.sh
+
 Some tips:
 ----------
 
