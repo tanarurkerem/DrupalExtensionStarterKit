@@ -16,9 +16,9 @@ elif [ x"$1" = xstop ]; then
   echo "Selenium stoped"
 elif [ x"$1" = xupdate ]; then
   cd bin/selenium
-  curl -O http://code.google.com/p/selenium/downloads/list
-  actualversion=$(grep -o "selenium-server-standalone-[0-9]*\\.[0-9]*\\.[0-9]*\\.jar" list|head -n 1)
-  curl -O http://selenium.googlecode.com/files/$actualversion
+  curl -o list http://selenium-release.storage.googleapis.com/
+  actualversion=$(grep -o "[0-9.]*/selenium-server-standalone-[0-9]*\\.[0-9]*\\.[0-9]*\\.jar" list|tail -n 1)
+  curl -O http://selenium-release.storage.googleapis.com/$actualversion
   mv selenium-server-* selenium-server.jar
   rm list
   cd ../..
