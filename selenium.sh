@@ -16,6 +16,9 @@ elif [ x"$1" = xstop ]; then
   rm $PIDFILE
   echo "Selenium stopped"
 elif [ x"$1" = xupdate ]; then
+  if ! [ -d bin/selenium ]; then
+    mkdir -p bin/selenium
+  fi
   cd bin/selenium
   actualversion=$(curl -s $SELENIUM_URL|grep -o "[0-9.]*/selenium-server-standalone-[0-9]*\\.[0-9]*\\.[0-9]*\\.jar"|tail -n 1)
   curl -O $SELENIUM_URL/$actualversion
